@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace LinqChallenges
 {
-    public class Class1
+    public class LinqChallenge
     {
+
+      
+
+
     }
 }

@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace LinqChallengesTest
 {
   [TestClass]
-  public class UnitTest1
+  public class LinqChallengesTest
   {
     [TestMethod]
     public void TestMethod1()
