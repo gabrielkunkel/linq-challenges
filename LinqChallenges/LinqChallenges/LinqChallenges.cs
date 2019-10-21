@@ -9,19 +9,16 @@ namespace LinqChallenges
     public static class LinqChallenge
     {
 
-        public static List<string> FilterForSubString (List<string> words, string subCheck)
+        public static List<string> FilterForSubString(List<string> words, string subCheck)
         {
-
-
-            var filteredWords =  words.Where(w => w.Contains(subCheck)).ToList();
-            return filteredWords;
-          
+          return words.Where(w => w.Contains(subCheck)).ToList();
         }
 
+        public static List<string> FilterDuplicates(List<string> names)
+        {
+          return names.Distinct().ToList();
+        }
 
-        
-        // go through list
-        // filter for substring "th" list.Contains
 
 
 
