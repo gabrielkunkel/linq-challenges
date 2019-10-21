@@ -57,6 +57,19 @@ namespace LinqChallengesTest
     }
 
 
+        [TestMethod]
+        public void CompressString_testInput_returnsexpected()
+        {
+            // arrange
+            string input = "Terrill";
+            string expected = "E1I1L2R2T1";
+
+            // act
+            string actual = LinqChallenge.CompressString(input);
+
+            // assert
+            Assert.AreEqual(expected, actual);
+        }
 
 
 

@@ -28,6 +28,12 @@ namespace LinqChallenges
                 .Average();
         }
 
+        public static string CompressString(string input)
+        {
+
+            return "fuck you";
+        }
+
 
 
 
