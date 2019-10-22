@@ -65,7 +65,7 @@ namespace LinqChallengesTest
             string expected = "E1I1L2R2T1";
 
             // act
-            string actual = LinqChallenge.CompressString(input);
+            var actual = LinqChallenge.CompressString(input);
 
             // assert
             Assert.AreEqual(expected, actual);

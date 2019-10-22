@@ -31,7 +31,16 @@ namespace LinqChallenges
         public static string CompressString(string input)
         {
 
-            return "fuck you";
+            var output = String.Concat(input.ToUpper().OrderBy(a => a).Distinct()).ToList();
+            var numbers = input.ToUpper().OrderBy(a => a).GroupBy( b => b ).Select(c => c.Count()).ToList(); // string EILRT need to add num
+            var zippedList = output.Zip( numbers, (a,b) => String.Concat(a,b));
+            string result = String.Join("", zippedList);
+
+            return result;        
+
+
+
+            
         }
 
 
